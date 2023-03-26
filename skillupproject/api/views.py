@@ -1,10 +1,11 @@
-import django_filters
-from rest_framework import viewsets, filters
-
 from .models import Sample
 from .serializer import SampleSerializer
+from rest_framework import generics
 
-# Create your views here.
-class SampleViewSet(viewsets.ModelViewSet):
+class SampleList(generics.ListCreateAPIView):
+    queryset = Sample.objects.all()
+    serializer_class = SampleSerializer
+
+class SampleDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Sample.objects.all()
     serializer_class = SampleSerializer

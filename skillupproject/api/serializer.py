@@ -5,4 +5,5 @@ from .models import Sample
 class SampleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sample
-        fields = ('title', 'contents')
+        fields = ['id', 'title', 'contents']
+
