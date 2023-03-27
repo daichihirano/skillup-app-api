@@ -4,3 +4,5 @@ skillupproject/skillupproject/__pycache__/
 .DS_Store
 skillupproject/.DS_Store
 skillupproject/db.sqlite3
+skillupproject/api/__pycache__/
+skillupproject/api/migrations/__pycache__/
