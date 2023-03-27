@@ -3,3 +3,4 @@ skillupproject/nohup.out
 skillupproject/skillupproject/__pycache__/
 .DS_Store
 skillupproject/.DS_Store
+db.sqlite3
