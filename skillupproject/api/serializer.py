@@ -10,4 +10,4 @@ class SampleSerializer(serializers.ModelSerializer):
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
-        fields = ['id', 'type', 'software', 'level']
+        fields = ['id', 'category', 'name', 'level']
