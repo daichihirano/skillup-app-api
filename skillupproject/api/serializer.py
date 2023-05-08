@@ -10,4 +10,16 @@ class SampleSerializer(serializers.ModelSerializer):
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
-        fields = ['id', 'category', 'name', 'level']
+        fields = ['category', 'name', 'level']
+
+
+
+class SkillItemSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    level = serializers.IntegerField()
+
+class SkillCategorySerializer(serializers.Serializer):
+    category = serializers.CharField()
+    skills = SkillItemSerializer(many=True)
+
+
